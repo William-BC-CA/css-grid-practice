@@ -2,10 +2,15 @@
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    height: 100vh; /*https://stackoverflow.com/questions/60941673/why-wont-fr-units-work-with-grid-template-rows-on-css-grid */
+    /* width: 100vw; */
 }
 
 div[class ^= grid-item]{
     border-top: 1px solid black;
+    border-left: 1px solid black;
 }
 
 .grid-item1{
